@@ -34,4 +34,3 @@ judge 값 – congestion : 혼잡 / normal : 정상
 
 <img src="system.png">
 
-copyright(c) 2015 All rights reserved by Kim Sang Hyeon & PROG(Programming Circle in KNUCSE)
