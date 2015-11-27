@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import="data.GetItem" %>  
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>PROG Project 2015</title>
+</head>
+<body>
+<% 
+String param1 = request.getParameter("busno");
+String param2 = request.getParameter("judge");
+
+String url = "http://localhost:56281/getData.aspx";
+
+if(param1 != null)
+{
+	if(param2 != null)
+	{
+		if(param2.toLowerCase().equals("yes"))
+		{
+			url += "?busno"+param1+"&judge=yes";
+		}
+		else
+		{
+			url += "?busno"+param1;
+		}
+	}
+	else
+	{
+		url += "?busno"+param1;
+	}
+		
+}
+
+%>
+<%=new GetItem(url).getJSON() %>
+</body>
+</html>
