@@ -1,5 +1,7 @@
 # PTIMS_ASP_Webserver
 ASP WebServer for Public Transportation Intensity Measuring Systems
+Using GPL v3 License
+
 
 온습도 센서와 이산화탄소 센서를 활용한 대중교통 혼잡도 측정 시스템
 
@@ -33,4 +35,5 @@ judge 값 – congestion : 혼잡 / normal : 정상
 데이터베이스 : mongoDB 사용
 
 <img src="system.png">
+
 
